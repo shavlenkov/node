@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AFISHA</title>
+  <link rel="stylesheet" href="./css/style.css?">
+</head>
+
+<body>
+  <div class="wrapper-def">
+    <header class="top-menu">
+      <div class="container-def">
+        <div class="top-menu__wrap">
+          <div class="top-menu__content">
+            <div class="top-menu__left">
+              <a href="./" class="top-menu__logo logo-def">AFISHA</a>
+            </div>
+            <div class="top-menu__right">
+              <nav class="top-menu__links">
+                <ul class="links-def">
+											<li class="links-def__el "><a class="links-def__link" href="theatre.html">театр</a></li>
+																<li class="links-def__el "><a class="links-def__link" href="opera.html">Опера</a></li>
+																<li class="links-def__el "><a class="links-def__link" href="balet.html">Балет</a></li>
+																<li class="links-def__el "><a class="links-def__link" href="standup.html">Стендап</a></li>
+																<li class="links-def__el "><a class="links-def__link" href="exhibition.html">Выставки</a></li>
+					                </ul>
+              </nav>
+              <svg class="top-menu__btn" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 9H0" stroke="#F2F2F2" stroke-width="2" />
+                <path d="M16 5H0" stroke="#F2F2F2" stroke-width="2" />
+                <path d="M16 1H0" stroke="#F2F2F2" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mob-menu">
+      <div class="mob-menu__wrap">
+        <div class="mob-menu__content">
+          <div class="mob-menu__top">
+            <a href="./" class="mob-menu__logo logo-def">AFISHA</a>
+            <svg class="mob-menu__btn" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9066 0.996043L1 11.004" stroke="#F2F2F2" stroke-width="2" />
+              <path d="M14.9999 11.004L1.00003 0.996055" stroke="#F2F2F2" stroke-width="2" />
+            </svg>
+          </div>
+          <ul class="mob-menu__links">
+            				<li class="mob-menu__links-el "><a class="mob-menu__links-link" href="theatre.html">театр</a></li>
+										<li class="mob-menu__links-el "><a class="mob-menu__links-link" href="opera.html">Опера</a></li>
+										<li class="mob-menu__links-el "><a class="mob-menu__links-link" href="balet.html">Балет</a></li>
+										<li class="mob-menu__links-el "><a class="mob-menu__links-link" href="standup.html">Стендап</a></li>
+										<li class="mob-menu__links-el "><a class="mob-menu__links-link" href="exhibition.html">Выставки</a></li>
+			          </ul>
+        </div>
+      </div>
+      <div class="mob-menu__footer sec-footer">
+        <div class="sec-footer__wrap">
+          <div class="sec-footer__content">
+            <div class="sec-footer__text sec-footer__text-1">© ООО "Городские Зрелищные Кассы", 2023</div>
+            <div class="sec-footer__text">Все права защищены.</div>
+            <div class="sec-footer__text">Для лиц старше 18 лет.</div>
+            <div class="sec-footer__bottom"><a class="sec-footer__text" href="#">Пользовательское соглашение</a><a class="sec-footer__text" href="#">Политика конфеденциальности</a><a class="sec-footer__text" href="#">Возврат и условия</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>	<style>
+		.price5 {
+			background-color: #976FBF;
+		}
+		
+		.price4 {
+			background-color: #482EA6;
+		}
+		
+		.price3 {
+			background-color: #FBF08C;
+		}
+		
+		.price2 {
+			background-color: #FF5912;
+		}
+		
+		.price1 {
+			background-color: #EE1C25;
+		}
+		
+		.mobpricescene {
+			display: none;
+		}
+			
+		@media screen and (max-width: 991px){
+			.mobpricescene {
+				display: flex;
+			}
+		}
+	</style>
+	<section class="sec-order">
+      <div class="container-def">
+        <div class="sec-order__wrap">
+          <div class="sec-order__title title-def title-def_sec3">ЗАЯВКА #1687952235</div>
+          <div class="sec-order__content wrap-tabs">
+            <ul class="block-tabs wrap-tabs__tabs">
+			              <div class="block-tabs__el wrap-tabs__btn active" id="step1">ВЫБОР ДАТЫ</div>
+              <div class="block-tabs__el wrap-tabs__btn" id="step2">ВЫБОР МЕСТ</div>
+              <div class="block-tabs__el wrap-tabs__btn" id="step3">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+			            </ul>
+			            <div class="wrap-tabs__content">
+              <div class="wrap-tabs__content-el">
+                <div class="locate-info">
+                  <svg width="33" height="40" viewBox="0 0 33 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.478516 0.25L16.5 40L32.5215 0.25H0.478516ZM17 14C19.7614 14 22 11.7614 22 9C22 6.23858 19.7614 4 17 4C14.2386 4 12 6.23858 12 9C12 11.7614 14.2386 14 17 14Z" fill="#EE1C25" />
+                  </svg>Санкт-Петербург, Литейный проспект, 51</div>
+													<div class="block-choose-date selectdayblock" onclick="SelectDate('27 июля 2023 11:00', '27');" id="day27">
+					  <div class="block-choose-date__left">
+						<div class="block-choose-date__date">27 июля</div>
+						<div class="block-choose-date__time">11:00</div>
+					  </div>
+					  <div class="block-choose-date__right" onclick="SelectDate('27 июля 2023', '27');"><span id="dayspan27" class="btn-def btn-def_border btn-def_3 block-choose-date__btn selectdayblockspan"><span>ВЫБРАТЬ СЕАНС</span></span>
+					  </div>
+					</div>
+				              </div>
+              <div class="wrap-tabs__content-el">
+                <div class="sec-order__scene">
+                  <div class="sec-order__scene-info sec-order__scene-left">
+                    <div class="info-scene" >
+                      <div class="info-scene__dec" style="background-color: #976FBF;"></div>
+                      <div class="info-scene__text">2490</div>
+                    </div>
+                    <div class="info-scene" >
+                      <div class="info-scene__dec" style="background-color: #482EA6;"></div>
+                      <div class="info-scene__text">2990</div>
+                    </div>
+                    <div class="info-scene" >
+                      <div class="info-scene__dec" style="background-color: #FBF08C;"></div>
+                      <div class="info-scene__text">3490</div>
+                    </div>
+                    <div class="info-scene" style="display:none;">
+                      <div class="info-scene__dec" style="background-color: #FF5912;"></div>
+                      <div class="info-scene__text"></div>
+                    </div>
+                    <div class="info-scene" >
+                      <div class="info-scene__dec" style="background-color: #EE1C25;"></div>
+                      <div class="info-scene__text">5490</div>
+                    </div>
+                    <div class="info-scene">
+                      <div class="info-scene__dec"></div>
+                      <div class="info-scene__text">Не доступно</div>
+                    </div>
+                  </div>
+                  <div class="block-scene-wrap" >
+                    <div class="block-scene">
+                      <div class="block-scene__line" >
+                        <div id="line1place1" onclick="changePlace('line1place1', '2490');" class="block-scene__el disabled">1</div>
+                        <div id="line1place2" onclick="changePlace('line1place2', '2490');" class="block-scene__el price5">2</div>
+                        <div id="line1place3" onclick="changePlace('line1place3', '2490');" class="block-scene__el price5">3</div>
+                        <div id="line1place4" onclick="changePlace('line1place4', '2490');" class="block-scene__el disabled">4</div>
+                        <div id="line1place5" onclick="changePlace('line1place5', '2490');" class="block-scene__el disabled">5</div>
+                        <div id="line1place6" onclick="changePlace('line1place6', '2490');" class="block-scene__el price5">6</div>
+                        <div id="line1place7" onclick="changePlace('line1place7', '2490');" class="block-scene__el disabled">7</div>
+                        <div id="line1place8" onclick="changePlace('line1place8', '2490');" class="block-scene__el disabled">8</div>
+                        <div id="line1place9" onclick="changePlace('line1place9', '2490');" class="block-scene__el price5">9</div>
+                        <div id="line1place10" onclick="changePlace('line1place10', '2490');" class="block-scene__el disabled">10</div>
+                        <div id="line1place11" onclick="changePlace('line1place11', '2490');" class="block-scene__el disabled">11</div>
+                        <div id="line1place12" onclick="changePlace('line1place12', '2490');" class="block-scene__el disabled">12</div>
+                        <div id="line1place13" onclick="changePlace('line1place13', '2490');" class="block-scene__el disabled">13</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line2place1" onclick="changePlace('line2place1', '2490');" class="block-scene__el disabled">1</div>
+                        <div id="line2place2" onclick="changePlace('line2place2', '2490');" class="block-scene__el disabled">2</div>
+                        <div id="line2place3" onclick="changePlace('line2place3', '2490');" class="block-scene__el disabled">3</div>
+                        <div id="line2place4" onclick="changePlace('line2place4', '2490');" class="block-scene__el disabled">4</div>
+                        <div id="line2place5" onclick="changePlace('line2place5', '2490');" class="block-scene__el disabled">5</div>
+                        <div id="line2place6" onclick="changePlace('line2place6', '2490');" class="block-scene__el disabled">6</div>
+                        <div id="line2place7" onclick="changePlace('line2place7', '2490');" class="block-scene__el disabled">7</div>
+                        <div id="line2place8" onclick="changePlace('line2place8', '2490');" class="block-scene__el price5">8</div>
+                        <div id="line2place9" onclick="changePlace('line2place9', '2490');" class="block-scene__el price5">9</div>
+                        <div id="line2place10" onclick="changePlace('line2place10', '2490');" class="block-scene__el disabled">10</div>
+                        <div id="line2place11" onclick="changePlace('line2place11', '2490');" class="block-scene__el disabled">11</div>
+                        <div id="line2place12" onclick="changePlace('line2place12', '2490');" class="block-scene__el disabled">12</div>
+                        <div id="line2place13" onclick="changePlace('line2place13', '2490');" class="block-scene__el disabled">13</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line3place1" onclick="changePlace('line3place1', '2490');" class="block-scene__el price5">1</div>
+                        <div id="line3place2" onclick="changePlace('line3place2', '2490');" class="block-scene__el disabled">2</div>
+                        <div id="line3place3" onclick="changePlace('line3place3', '2490');" class="block-scene__el disabled">3</div>
+                        <div id="line3place4" onclick="changePlace('line3place4', '2490');" class="block-scene__el disabled">4</div>
+                        <div id="line3place5" onclick="changePlace('line3place5', '2490');" class="block-scene__el disabled">5</div>
+                        <div id="line3place6" onclick="changePlace('line3place6', '2490');" class="block-scene__el price5">6</div>
+                        <div id="line3place7" onclick="changePlace('line3place7', '2490');" class="block-scene__el price5">7</div>
+                        <div id="line3place8" onclick="changePlace('line3place8', '2490');" class="block-scene__el disabled">8</div>
+                        <div id="line3place9" onclick="changePlace('line3place9', '2490');" class="block-scene__el disabled">9</div>
+                        <div id="line3place10" onclick="changePlace('line3place10', '2490');" class="block-scene__el disabled">10</div>
+                        <div id="line3place11" onclick="changePlace('line3place11', '2490');" class="block-scene__el disabled">11</div>
+                        <div id="line3place12" onclick="changePlace('line3place12', '2490');" class="block-scene__el disabled">12</div>
+                        <div id="line3place13" onclick="changePlace('line3place13', '2490');" class="block-scene__el disabled">13</div>
+						<div id="line3place14" onclick="changePlace('line3place14', '2490');" class="block-scene__el disabled">14</div>
+						<div id="line3place15" onclick="changePlace('line3place15', '2490');" class="block-scene__el disabled">15</div>
+						<div id="line3place16" onclick="changePlace('line3place16', '2490');" class="block-scene__el disabled">16</div>
+						<div id="line3place17" onclick="changePlace('line3place17', '2490');" class="block-scene__el price5">17</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line4place1" onclick="changePlace('line4place1', '2990');" class="block-scene__el price4">1</div>
+                        <div id="line4place2" onclick="changePlace('line4place2', '2990');" class="block-scene__el disabled">2</div>
+                        <div id="line4place3" onclick="changePlace('line4place3', '2990');" class="block-scene__el price4">3</div>
+                        <div id="line4place4" onclick="changePlace('line4place4', '2990');" class="block-scene__el disabled">4</div>
+                        <div id="line4place5" onclick="changePlace('line4place5', '2990');" class="block-scene__el disabled">5</div>
+                        <div id="line4place6" onclick="changePlace('line4place6', '2990');" class="block-scene__el disabled">6</div>
+                        <div id="line4place7" onclick="changePlace('line4place7', '2990');" class="block-scene__el disabled">7</div>
+                        <div id="line4place8" onclick="changePlace('line4place8', '2990');" class="block-scene__el disabled">8</div>
+                        <div id="line4place9" onclick="changePlace('line4place9', '2990');" class="block-scene__el disabled">9</div>
+                        <div id="line4place10" onclick="changePlace('line4place10', '2990');" class="block-scene__el disabled">10</div>
+                        <div id="line4place11" onclick="changePlace('line4place11', '2990');" class="block-scene__el price4">11</div>
+                        <div id="line4place12" onclick="changePlace('line4place12', '2990');" class="block-scene__el price4">12</div>
+                        <div id="line4place13" onclick="changePlace('line4place13', '2990');" class="block-scene__el disabled">13</div>
+						<div id="line4place14" onclick="changePlace('line4place14', '2990');" class="block-scene__el disabled">14</div>
+						<div id="line4place15" onclick="changePlace('line4place15', '2990');" class="block-scene__el price4">15</div>
+						<div id="line4place16" onclick="changePlace('line4place16', '2990');" class="block-scene__el disabled">16</div>
+						<div id="line4place17" onclick="changePlace('line4place17', '2990');" class="block-scene__el price4">17</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line5place1" onclick="changePlace('line5place1', '2990');" class="block-scene__el disabled">1</div>
+                        <div id="line5place2" onclick="changePlace('line5place2', '2990');" class="block-scene__el price4">2</div>
+                        <div id="line5place3" onclick="changePlace('line5place3', '2990');" class="block-scene__el disabled">3</div>
+                        <div id="line5place4" onclick="changePlace('line5place4', '2990');" class="block-scene__el price4">4</div>
+                        <div id="line5place5" onclick="changePlace('line5place5', '2990');" class="block-scene__el price4">5</div>
+                        <div id="line5place6" onclick="changePlace('line5place6', '2990');" class="block-scene__el disabled">6</div>
+                        <div id="line5place7" onclick="changePlace('line5place7', '2990');" class="block-scene__el disabled">7</div>
+                        <div id="line5place8" onclick="changePlace('line5place8', '2990');" class="block-scene__el price4">8</div>
+                        <div id="line5place9" onclick="changePlace('line5place9', '2990');" class="block-scene__el disabled">9</div>
+                        <div id="line5place10" onclick="changePlace('line5place10', '2990');" class="block-scene__el price4">10</div>
+                        <div id="line5place11" onclick="changePlace('line5place11', '2990');" class="block-scene__el disabled">11</div>
+                        <div id="line5place12" onclick="changePlace('line5place12', '2990');" class="block-scene__el disabled">12</div>
+                        <div id="line5place13" onclick="changePlace('line5place13', '2990');" class="block-scene__el disabled">13</div>
+						<div id="line5place14" onclick="changePlace('line5place14', '2990');" class="block-scene__el price4">14</div>
+						<div id="line5place15" onclick="changePlace('line5place15', '2990');" class="block-scene__el disabled">15</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line6place1" onclick="changePlace('line6place1', '2990');" class="block-scene__el price4">1</div>
+                        <div id="line6place2" onclick="changePlace('line6place2', '2990');" class="block-scene__el disabled">2</div>
+                        <div id="line6place3" onclick="changePlace('line6place3', '2990');" class="block-scene__el disabled">3</div>
+                        <div id="line6place4" onclick="changePlace('line6place4', '2990');" class="block-scene__el disabled">4</div>
+                        <div id="line6place5" onclick="changePlace('line6place5', '2990');" class="block-scene__el price4">5</div>
+                        <div id="line6place6" onclick="changePlace('line6place6', '2990');" class="block-scene__el price4">6</div>
+                        <div id="line6place7" onclick="changePlace('line6place7', '2990');" class="block-scene__el disabled">7</div>
+                        <div id="line6place8" onclick="changePlace('line6place8', '2990');" class="block-scene__el disabled">8</div>
+                        <div id="line6place9" onclick="changePlace('line6place9', '2990');" class="block-scene__el disabled">9</div>
+                        <div id="line6place10" onclick="changePlace('line6place10', '2990');" class="block-scene__el disabled">10</div>
+                        <div id="line6place11" onclick="changePlace('line6place11', '2990');" class="block-scene__el disabled">11</div>
+                        <div id="line6place12" onclick="changePlace('line6place12', '2990');" class="block-scene__el disabled">12</div>
+                        <div id="line6place13" onclick="changePlace('line6place13', '2990');" class="block-scene__el disabled">13</div>
+						<div id="line6place14" onclick="changePlace('line6place14', '2990');" class="block-scene__el price4">14</div>
+						<div id="line6place15" onclick="changePlace('line6place15', '2990');" class="block-scene__el disabled">15</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line7place1" onclick="changePlace('line7place1', '3490');" class="block-scene__el disabled">1</div>
+                        <div id="line7place2" onclick="changePlace('line7place2', '3490');" class="block-scene__el disabled">2</div>
+                        <div id="line7place3" onclick="changePlace('line7place3', '3490');" class="block-scene__el disabled">3</div>
+                        <div id="line7place4" onclick="changePlace('line7place4', '3490');" class="block-scene__el price3">4</div>
+                        <div id="line7place5" onclick="changePlace('line7place5', '3490');" class="block-scene__el disabled">5</div>
+                        <div id="line7place6" onclick="changePlace('line7place6', '3490');" class="block-scene__el disabled">6</div>
+                        <div id="line7place7" onclick="changePlace('line7place7', '3490');" class="block-scene__el price3">7</div>
+                        <div id="line7place8" onclick="changePlace('line7place8', '3490');" class="block-scene__el price3">8</div>
+                        <div id="line7place9" onclick="changePlace('line7place9', '3490');" class="block-scene__el disabled">9</div>
+                        <div id="line7place10" onclick="changePlace('line7place10', '3490');" class="block-scene__el disabled">10</div>
+                        <div id="line7place11" onclick="changePlace('line7place11', '3490');" class="block-scene__el disabled">11</div>
+                        <div id="line7place12" onclick="changePlace('line7place12', '3490');" class="block-scene__el disabled">12</div>
+                        <div id="line7place13" onclick="changePlace('line7place13', '3490');" class="block-scene__el disabled">13</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line8place1" onclick="changePlace('line8place1', '3490');" class="block-scene__el disabled">1</div>
+                        <div id="line8place2" onclick="changePlace('line8place2', '3490');" class="block-scene__el disabled">2</div>
+                        <div id="line8place3" onclick="changePlace('line8place3', '3490');" class="block-scene__el disabled">3</div>
+                        <div id="line8place4" onclick="changePlace('line8place4', '3490');" class="block-scene__el price3">4</div>
+                        <div id="line8place5" onclick="changePlace('line8place5', '3490');" class="block-scene__el disabled">5</div>
+                        <div id="line8place6" onclick="changePlace('line8place6', '3490');" class="block-scene__el disabled">6</div>
+                        <div id="line8place7" onclick="changePlace('line8place7', '3490');" class="block-scene__el disabled">7</div>
+                        <div id="line8place8" onclick="changePlace('line8place8', '3490');" class="block-scene__el price3">8</div>
+                        <div id="line8place9" onclick="changePlace('line8place9', '3490');" class="block-scene__el disabled">9</div>
+                        <div id="line8place10" onclick="changePlace('line8place10', '3490');" class="block-scene__el price3">10</div>
+                        <div id="line8place11" onclick="changePlace('line8place11', '3490');" class="block-scene__el price3">11</div>
+                        <div id="line8place12" onclick="changePlace('line8place12', '3490');" class="block-scene__el disabled">12</div>
+                        <div id="line8place13" onclick="changePlace('line8place13', '3490');" class="block-scene__el disabled">13</div>
+                      </div>
+                      <div class="block-scene__line" >
+                        <div id="line9place1" onclick="changePlace('line9place1', '5490');" class="block-scene__el disabled">1</div>
+                        <div id="line9place2" onclick="changePlace('line9place2', '5490');" class="block-scene__el disabled">2</div>
+                        <div id="line9place3" onclick="changePlace('line9place3', '5490');" class="block-scene__el price1">3</div>
+                        <div id="line9place4" onclick="changePlace('line9place4', '5490');" class="block-scene__el disabled">4</div>
+                        <div id="line9place5" onclick="changePlace('line9place5', '5490');" class="block-scene__el disabled">5</div>
+                        <div id="line9place6" onclick="changePlace('line9place6', '5490');" class="block-scene__el disabled">6</div>
+                        <div id="line9place7" onclick="changePlace('line9place7', '5490');" class="block-scene__el disabled">7</div>
+                        <div id="line9place8" onclick="changePlace('line9place8', '5490');" class="block-scene__el price1">8</div>
+                        <div id="line9place9" onclick="changePlace('line9place9', '5490');" class="block-scene__el price1">9</div>
+                        <div id="line9place10" onclick="changePlace('line9place10', '5490');" class="block-scene__el disabled">10</div>
+                        <div id="line9place11" onclick="changePlace('line9place11', '5490');" class="block-scene__el price1">11</div>
+                        <div id="line9place12" onclick="changePlace('line9place12', '5490');" class="block-scene__el price1">12</div>
+                        <div id="line9place13" onclick="changePlace('line9place13', '5490');" class="block-scene__el price1">13</div>
+                      </div>
+                      <div class="block-scene__title">СЦЕНА</div>
+                    </div>
+                  </div>
+                  <div class="sec-order__scene-body sec-order__scene-right">
+                    <div class="sec-order__scene-text sec-order__scene-title">Выбрано:</div>
+                    <div class="sec-order__scene-text" id="step2vibrano"></div>
+                    <div class="sec-order__scene-text sec-order__scene-title">Цена: <span id="step2totalprice" style="margin-left: 0px;">0 ₽</span>
+                    </div>
+                    <button class="btn-def btn-def_2 disabled sec-order__scene-btn" id="step2buybutton" onclick="GoStep3();"><span>КУПИТЬ</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap-tabs__content-el">
+                <div class="block-order-info">
+                  <div class="block-order-info__content">
+                    <div class="block-order-info__left">
+                      <div class="block-order-info__title">ВАШ ЗАКАЗ:</div>
+                      <div class="block-order-info__name">«Иоланта»</div>
+                      <div class="block-order-info__text">Санкт-Петербург, Литейный проспект, 51</div>
+                      <div class="block-order-info__text" id="timeorder"></div>
+                      <div class="block-order-info__text" id="rowplaceorder"></div>
+                    </div>
+                    <div class="block-order-info__right">
+                      <div class="block-order-info__title">К ОПЛАТЕ:</div>
+                      <div class="block-order-info__text" id="step3totalprice">0 ₽</div>
+                    </div>
+                  </div>
+                   <form method="POST" action="/pay" class="block-form form-def sec-order__form"><input class="block-order-info__text" type="hidden" name="summa" value="100" id="summa">
+                    <div class="block-form__el form-el">
+                      <input class="inp-def form-el__inp form-def__inp" type="text" id="ordername" placeholder="Ваше ФИО">
+                    </div>
+                    <div class="block-form__el form-el">
+                      <input class="inp-def form-el__inp form-def__inp inp-tel" type="text" id="orderphone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="block-form__el form-el">
+                      <input class="inp-def form-el__inp form-def__inp inp-email" type="text" id="ordermail" placeholder="Ваша почта">
+                    </div>
+                    <button type="submit" class="block-form__btn btn-def btn-def_2 form-def__btn"><span>ОПЛАТИТЬ</span>
+                    </button>
+					<button class="redirectpay" onclick="Redirectpay();" style="display:none;"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+			          </div>
+        </div>
+      </div>
+    </section>
+	<script>
+		var orderdate = "";
+		var placevar = "";
+		var step2totalprice = 0;
+		function SelectDate(datetime, day) {
+			orderdate = datetime;
+			document.getElementById('timeorder').innerHTML = datetime;
+			var elems = document.querySelectorAll(".selectdayblock");
+			[].forEach.call(elems, function(el) {
+				el.classList.remove("active");
+			});
+			
+			var elems = document.querySelectorAll(".selectdayblockspan");
+			[].forEach.call(elems, function(el) {
+				el.innerHTML = "ВЫБРАТЬ СЕАНС";
+			});
+			
+			document.getElementById('day' + day).classList.add('active');
+			document.getElementById('dayspan' + day).innerHTML = "ВЫБРАНО";
+			document.getElementById('step2').click();
+		}
+		
+		function GoStep3() {
+			if (document.querySelector('#step2buybutton').classList.contains('disabled')) {
+				return;
+			}
+			
+			document.getElementById('step3').click();
+		}
+		
+		function MinusCount(countid, price) {
+			if(document.getElementById(countid).innerHTML == 0){
+				return;
+			}
+			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) - 1;
+document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
+			document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
+			step2totalprice = Number(step2totalprice) - Number(price);
+			
+			if(step2totalprice == 0){
+				document.getElementById('step2buybutton').classList.add("disabled");
+			}
+			
+			document.getElementById('rowplaceorder').innerHTML = document.getElementById('rowplaceorder').innerHTML.replace(document.getElementById(countid + '_name').innerHTML + '<br>', '');
+		}
+		
+		function PlusCount(countid, price) {
+			if(document.getElementById(countid).innerHTML == 5){
+				alert("Максимум 5 билетов");
+				return;
+			}
+			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) + 1;
+document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
+			document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) + Number(price) + " ₽";
+			step2totalprice = Number(step2totalprice) + Number(price);
+			
+			if(step2totalprice > 0){
+				document.getElementById('step2buybutton').classList.remove("disabled");
+			}
+						
+			document.getElementById('rowplaceorder').innerHTML = document.getElementById('rowplaceorder').innerHTML + document.getElementById(countid + '_name').innerHTML + '<br/>';
+		}
+		
+		function Redirectpay() {
+			var ordername = document.getElementById('ordername').value;
+			var orderphone = document.getElementById('orderphone').value;
+			var ordermail = document.getElementById('ordermail').value;
+			
+			if(document.getElementById('timeorder').innerHTML == ""){
+				alert("Пожалуйста выберите дату и время");
+				return;
+			}
+			
+			location.replace('/./payment.php?d=&on=' + ordername + '&op=' + orderphone + '&dt=' + document.getElementById('timeorder').innerHTML + '&pr=Иоланта&om=' + ordermail + '&s=' + step2totalprice +'&rp=' + document.getElementById('rowplaceorder').innerHTML);
+		}
+		
+		let ostalosticketmassiv = ["8", "10", "3", "7", "5", "7", "5", "9", "10", "7", "6", "5", "6", "9", "2", "10", "8", "9", "9", "7", "8", "9", "6", "10", "9", "7", "8", "4", "8", "8", "4", "3"];
+		
+		function changeDate(placeiddate) {
+			if (!document.querySelector('#' + placeiddate).classList.contains('disabled')) {
+				if (!document.querySelector('#' + placeiddate).classList.contains('active')) {
+					document.getElementById('step2infoticket').style.display = "block";
+					const boxes = document.querySelectorAll('.block-date__el');
+
+					boxes.forEach(box => {
+					  box.classList.remove('active');
+					});
+
+					document.querySelector('#' + placeiddate).classList.add('active');
+					
+					document.getElementById('ostalosticket').innerHTML = ostalosticketmassiv[document.getElementById(placeiddate).innerHTML];
+					
+					document.getElementById('step2vibrano').innerHTML = document.getElementById(placeiddate).innerHTML + " июня 20:00";
+					document.getElementById('timeorder').innerHTML = document.getElementById(placeiddate).innerHTML + " июня 20:00";
+				}
+			}
+		}
+		
+		function changePlace(idplace, price) {
+			if (!document.querySelector('#' + idplace).classList.contains('disabled')) {
+				if (!document.querySelector('#' + idplace).classList.contains('active')) {
+					document.querySelector('#' + idplace).classList.add('active');
+					document.getElementById('step2totalprice').innerHTML = Number(step2totalprice) + Number(price) + " ₽";
+					document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) + Number(price) + " ₽";
+					step2totalprice = Number(step2totalprice) + Number(price);
+					if(step2totalprice > 0){
+						document.getElementById('step2buybutton').classList.remove("disabled");
+					}
+					
+					massiv = idplace.split("place");
+					
+					row = massiv[0].replaceAll('line', '');
+					place = massiv[1];
+					console.log(row);
+					if(row == 1){
+						rowresult = 9;
+					}
+					
+					if(row == 2){
+						rowresult = 8;
+					}
+					
+					if(row == 3){
+						rowresult = 7;
+					}
+					
+					if(row == 4){
+						rowresult = 6;
+					}
+					
+					if(row == 5){
+						rowresult = 5;
+					}
+					
+					if(row == 6){
+						rowresult = 4;
+					}
+					
+					if(row == 7){
+						rowresult = 3;
+					}
+					
+					if(row == 8){
+						rowresult = 2;
+					}
+					
+					if(row == 9){
+						rowresult = 1;
+					}
+										
+					if(document.getElementById('step2vibrano').innerHTML == ""){
+						br = "";
+					}else{
+						br = "<br/>";
+					}
+					
+					stroka = rowresult + " ряд " + place + " место";
+					
+					document.getElementById('step2vibrano').innerHTML = document.getElementById('step2vibrano').innerHTML + br + stroka;
+					
+					var search = rowresult + ':' + place + ';';
+					
+					placevar = placevar + search;
+					
+					document.getElementById('rowplaceorder').innerHTML = document.getElementById('rowplaceorder').innerHTML + br + stroka + " ";
+				}else{
+					document.querySelector('#' + idplace).classList.remove('active');
+					document.getElementById('step2totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
+					document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
+					step2totalprice = Number(step2totalprice) - Number(price);
+					if(step2totalprice == 0){
+						document.getElementById('step2buybutton').classList.add("disabled");
+					}
+					
+					massiv = idplace.split("place");
+					
+					row = massiv[0].replaceAll('line', '');
+					place = massiv[1];
+					
+					if(row == "1"){
+						rowresult = 9;
+					}
+					
+					if(row == 2){
+						rowresult = 8;
+					}
+					
+					if(row == 3){
+						rowresult = 7;
+					}
+					
+					if(row == 4){
+						rowresult = 6;
+					}
+					
+					if(row == 5){
+						rowresult = 5;
+					}
+					
+					if(row == 6){
+						rowresult = 4;
+					}
+					
+					if(row == 7){
+						rowresult = 3;
+					}
+					
+					if(row == 8){
+						rowresult = 2;
+					}
+					
+					if(row == 9){
+						rowresult = 1;
+					}
+					
+					stroka = rowresult + " ряд " + place + " место<br>";
+					step2vibrano = document.getElementById('step2vibrano').innerHTML;
+					document.getElementById('step2vibrano').innerHTML = document.getElementById('step2vibrano').innerHTML.replace(stroka, '');
+					
+					if(step2vibrano == document.getElementById('step2vibrano').innerHTML){
+						stroka = rowresult + " ряд " + place + " место";
+						document.getElementById('step2vibrano').innerHTML = document.getElementById('step2vibrano').innerHTML.replace(stroka, '');
+					}
+					
+					var search = rowresult + ':' + place + ';';
+					var replaceWith = '';
+					const result = placevar.split(search).join(replaceWith);
+					placevar = result;
+					
+					stroka = rowresult + " ряд " + place + " место <br>";
+					rowplaceorder = document.getElementById('rowplaceorder').innerHTML;
+					document.getElementById('rowplaceorder').innerHTML = document.getElementById('rowplaceorder').innerHTML.replace(stroka, '');
+					
+					if(rowplaceorder == document.getElementById('rowplaceorder').innerHTML){
+						stroka = rowresult + " ряд " + place + " место ";
+						document.getElementById('rowplaceorder').innerHTML = document.getElementById('rowplaceorder').innerHTML.replace(stroka, '');
+					}
+				}
+			}
+		}
+	</script>
+
+    <footer class="sec-footer">
+      <div class="container-def">
+        <div class="sec-footer__wrap">
+          <div class="sec-footer__content">
+            <div class="sec-footer__text sec-footer__text-1">© ООО "Городские Зрелищные Кассы", 2023<br>
+Все права защищены.<br>
+Для лиц старше 18 лет.</div>
+            <div class="sec-footer__bottom"><a class="sec-footer__text" href="/./user.pdf">Пользовательское соглашение</a><a class="sec-footer__text" href="/./refund.pdf">Возврат и условия</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+  <script src="/./js/main.js?1"></script>
+  <script src="http:/http://code.tidio.co/bouvwvgskjgn5edoewgqmao2wo6vbspt.js" async></script></body>
+
+</html>
