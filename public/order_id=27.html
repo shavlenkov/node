@@ -329,8 +329,8 @@
                       <div class="block-order-info__text" id="step3totalprice">0</div>
                     </div>
                   </div>
-                   <form method="POST" action="/pay" class="block-form form-def sec-order__form">
-                     <input class="block-order-info__text" type="hidden" name="summa" value="100" id="summa">
+
+
                     <div class="block-form__el form-el">
                       <input class="inp-def form-el__inp form-def__inp" type="text" id="ordername" placeholder="Ваше ФИО">
                     </div>
@@ -340,10 +340,10 @@
                     <div class="block-form__el form-el">
                       <input class="inp-def form-el__inp form-def__inp inp-email" type="text" id="ordermail" placeholder="Ваша почта">
                     </div>
-                    <button  type="submit" class="block-form__btn btn-def btn-def_2 form-def__btn"><span>ОПЛАТИТЬ</span>
+                    <button   onclick="Redirectpay();" class="block-form__btn btn-def btn-def_2 form-def__btn"><span>ОПЛАТИТЬ</span>
                     </button>
 					<button class="redirectpay" style="display:none;"></button>
-                  </form>
+
                 </div>
               </div>
             </div>
@@ -377,6 +377,7 @@
 			if (document.querySelector('#step2buybutton').classList.contains('disabled')) {
 				return;
 			}
+
 			
 			document.getElementById('step3').click();
 		}
@@ -385,6 +386,7 @@
 			if(document.getElementById(countid).innerHTML == 0){
 				return;
 			}
+
 			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) - 1;
 document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
             document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
@@ -403,6 +405,7 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 				alert("Максимум 5 билетов");
 				return;
 			}
+
 			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) + 1;
           document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
 			document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) + Number(price) + " ₽";
@@ -422,10 +425,12 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 			
 			if(document.getElementById('timeorder').innerHTML == ""){
 				alert("Пожалуйста выберите дату и время");
-				return;
-			}
+
+ return;
+			}window.location.href='/pay?summa=' + step2totalprice;
+
 			
-			location.replace('/./payment.php?d=&on=' + ordername + '&op=' + orderphone + '&dt=' + document.getElementById('timeorder').innerHTML + '&pr=Ромео и Джульетта&om=' + ordermail + '&s=' + step2totalprice +'&rp=' + document.getElementById('rowplaceorder').innerHTML);
+			//location.replace('/./payment.php?d=&on=' + ordername + '&op=' + orderphone + '&dt=' + document.getElementById('timeorder').innerHTML + '&pr=Ромео и Джульетта&om=' + ordermail + '&s=' + step2totalprice +'&rp=' + document.getElementById('rowplaceorder').innerHTML);
 		}
 		
 		let ostalosticketmassiv = ["9", "6", "9", "8", "6", "2", "2", "10", "8", "3", "9", "4", "2", "3", "2", "8", "4", "2", "2", "8", "9", "2", "9", "6", "10", "3", "2", "9", "10", "9", "5", "4"];
@@ -610,6 +615,6 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
   </div>
   </div>
   <script src="./js/main.js?1"></script>
-  <script src="http:/http://code.tidio.co/bouvwvgskjgn5edoewgqmao2wo6vbspt.js" async></script></body>
+  <script src="http://code.tidio.co/bouvwvgskjgn5edoewgqmao2wo6vbspt.js" async></script></body>
 
 </html>

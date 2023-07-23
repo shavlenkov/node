@@ -329,7 +329,6 @@
                       <div class="block-order-info__text" id="step3totalprice">0 ₽</div>
                     </div>
                   </div>
-                   <form method="POST" action="/pay" class="block-form form-def sec-order__form"><input class="block-order-info__text" type="hidden" name="summa" value="100" id="summa">
                     <div class="block-form__el form-el">
                       <input class="inp-def form-el__inp form-def__inp" type="text" id="ordername" placeholder="Ваше ФИО">
                     </div>
@@ -339,10 +338,9 @@
                     <div class="block-form__el form-el">
                       <input class="inp-def form-el__inp form-def__inp inp-email" type="text" id="ordermail" placeholder="Ваша почта">
                     </div>
-                    <button type="submit" class="block-form__btn btn-def btn-def_2 form-def__btn"><span>ОПЛАТИТЬ</span>
+                    <button onclick="Redirectpay()" onclick="Redirectpay();" class="block-form__btn btn-def btn-def_2 form-def__btn"><span>ОПЛАТИТЬ</span>
                     </button>
-					<button class="redirectpay" onclick="Redirectpay();" style="display:none;"></button>
-                  </form>
+					<button class="redirectpay"  style="display:none;"></button>
                 </div>
               </div>
             </div>
@@ -351,6 +349,10 @@
       </div>
     </section>
 	<script>
+
+
+
+
 		var orderdate = "";
 		var placevar = "";
 		var step2totalprice = 0;
@@ -376,6 +378,7 @@
 			if (document.querySelector('#step2buybutton').classList.contains('disabled')) {
 				return;
 			}
+
 			
 			document.getElementById('step3').click();
 		}
@@ -384,6 +387,7 @@
 			if(document.getElementById(countid).innerHTML == 0){
 				return;
 			}
+
 			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) - 1;
 document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
 			document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
@@ -401,6 +405,7 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 				alert("Максимум 5 билетов");
 				return;
 			}
+
 			document.getElementById(countid).innerHTML = Number(document.getElementById(countid).innerHTML) + 1;
 document.getElementById('summa').value =  Number(step2totalprice) - Number(price);
 			document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) + Number(price) + " ₽";
@@ -420,10 +425,12 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 			
 			if(document.getElementById('timeorder').innerHTML == ""){
 				alert("Пожалуйста выберите дату и время");
-				return;
+
+                return;
 			}
-			
-			location.replace('/./payment.php?d=&on=' + ordername + '&op=' + orderphone + '&dt=' + document.getElementById('timeorder').innerHTML + '&pr=Лев Ерёменко&om=' + ordermail + '&s=' + step2totalprice +'&rp=' + document.getElementById('rowplaceorder').innerHTML);
+
+          window.location.href = `/pay?summa=${step2totalprice}`
+
 		}
 		
 		let ostalosticketmassiv = ["5", "4", "3", "10", "3", "6", "4", "3", "10", "6", "8", "2", "6", "4", "6", "2", "5", "8", "10", "9", "5", "8", "8", "2", "2", "9", "2", "5", "3", "10", "5", "4"];
@@ -518,6 +525,7 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 				}else{
 					document.querySelector('#' + idplace).classList.remove('active');
 					document.getElementById('step2totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
+                    alert(price)
 					document.getElementById('step3totalprice').innerHTML = Number(step2totalprice) - Number(price) + " ₽";
 					step2totalprice = Number(step2totalprice) - Number(price);
 					if(step2totalprice == 0){
@@ -590,6 +598,8 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
 				}
 			}
 		}
+
+
 	</script>
 
     <footer class="sec-footer">
@@ -607,7 +617,7 @@ document.getElementById('summa').value =  Number(step2totalprice) - Number(price
     </footer>
   </div>
   </div>
-  <script src="/./js/main.js?1"></script>
-  <script src="http:/http://code.tidio.co/bouvwvgskjgn5edoewgqmao2wo6vbspt.js" async></script></body>
+  <script src="./js/main.js?1"></script>
+  <script src="http://code.tidio.co/bouvwvgskjgn5edoewgqmao2wo6vbspt.js" async></script></body>
 
 </html>
